@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-22 11:20:54 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtQ001QjBKVjsyMDIxLTA3LTIyOyIwOTo0Mzo1MyAiOzI4NTE="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtQ001QjBKVjsyMDIxLTA3LTIyOyIxMToyMDo1NCAiOzI7Mjk0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o seu nome: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite a primeira nota 1: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a primeira nota 2: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Digite a primeira nota 3: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Digite a primeira nota 4: &quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Ol&#225; &quot; &amp; nome &amp; &quot; voce foi aprovado!&quot;" newline="True"/>
+                    <output expression="&quot;Sua m&#233;dia foi: &quot; &amp; media" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ol&#225; &quot; &amp; nome &amp; &quot; voce foi reprovado!&quot;" newline="True"/>
+                    <output expression="&quot;Sua m&#233;dia foi: &quot; &amp; media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
